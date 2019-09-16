@@ -1,0 +1,16 @@
+{
+  "name": "sarau",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "koa": "^2.8.1",
+    "mongodb": "^3.3.2"
+  }
+}
