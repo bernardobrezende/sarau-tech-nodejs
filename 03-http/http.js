@@ -13,7 +13,7 @@ console.log( `Aguarde...` )
         //     } )
         // } )
 
-const url = `https://www.eventbriteapi.com/v3/events/search/?location.address=${ localidade }&location.within=5km&token=I6KD6XKCCQRDBM7NZL33`
+const url = `https://www.eventbriteapi.com/v3/events/search/?location.address=${ localidade }&location.within=5km&token=`
 
 const https = require( 'https' )
 

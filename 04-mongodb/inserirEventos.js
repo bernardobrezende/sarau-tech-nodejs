@@ -1,13 +1,13 @@
 const { MongoClient } = require( 'mongodb' )
 const axios = require( 'axios' )
 
-const connectionString = 'mongodb+srv://sarau-usr:PastelVegano2019@sarau-tecnologico-tmp-y1mnh.mongodb.net/test?retryWrites=true&w=majority'
+const connectionString = 'mongodb+srv://'
 const client = new MongoClient( connectionString )
-const eventosCollection = 'bernardo-eventos'
+const eventosCollection = 'eventos'
 
 // Pegar dados da API
 const [ localidade ] = process.argv.slice( 2 )
-const url = `https://www.eventbriteapi.com/v3/events/search/?location.address=${ localidade }&location.within=5km&token=I6KD6XKCCQRDBM7NZL33`
+const url = `https://www.eventbriteapi.com/v3/events/search/?location.address=${ localidade }&location.within=5km&token=`
 axios.get( url ).then( response => {
 
     client.connect( () => {
